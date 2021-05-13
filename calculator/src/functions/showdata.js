@@ -1,4 +1,4 @@
-const add1=() =>{
+export const add1=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 1;
     if (document.getElementById("txt1").value)
@@ -6,49 +6,49 @@ const add1=() =>{
 
         console.log("teste")
 }
-const add2=() =>{
+export const add2=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 2;
     if (document.getElementById("txt1").value)
         document.getElementById("txt2").value = 2;
 }
-const add3=() =>{
+export const add3=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 3;
     if (document.getElementById("txt1").value)
         document.getElementById("txt2").value = 3;
 }
-const add4=() =>{
+export const add4=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 4;
     if (document.getElementById("txt1").value)
         document.getElementById("txt2").value = 4;
 }
-const add5=() =>{
+export const add5=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 5;
     if (document.getElementById("txt1").value)
         document.getElementById("txt2").value = 5;
 }
-const add6=() =>{
+export const add6=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 6;
     if (document.getElementById("txt1").value)
         document.getElementById("txt2").value = 6;
 }
-const add7=() =>{
+export const add7=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 7;
     if (document.getElementById("txt1").value)
         document.getElementById("txt2").value = 7;
 }
-const add8=() =>{
+export const add8=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 8;
     if (document.getElementById("txt1").value)
         document.getElementById("txt2").value = 8;
 }
-const add9=() =>{
+export const add9=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 9;
     if (document.getElementById("txt1").value)
