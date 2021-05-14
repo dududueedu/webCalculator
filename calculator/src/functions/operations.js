@@ -3,7 +3,7 @@ export function somar() {
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
     var resultado = parseInt(valor1) + parseInt(valor2);
-    res.innerHTML = `Resultado de <strong>${valor1}</strong> + <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
+    res.innerHTML = `Resultado: <strong>${valor1}</strong> + <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
 }
 
 export function subtrair() {
@@ -11,7 +11,7 @@ export function subtrair() {
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
     var resultado = parseInt(valor1) - parseInt(valor2);
-    res.innerHTML = `Resultado de <strong>${valor1}</strong> - <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
+    res.innerHTML = `Resultado: <strong>${valor1}</strong> - <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
 }
 
 export function mutplicar() {
@@ -19,7 +19,7 @@ export function mutplicar() {
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
     var resultado = parseInt(valor1) * parseInt(valor2);
-    res.innerHTML = `Resultado de <strong>${valor1}</strong> X <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
+    res.innerHTML = `Resultado: <strong>${valor1}</strong> X <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
 }
 
 export function dividir() {
@@ -27,5 +27,5 @@ export function dividir() {
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
     var resultado = parseInt(valor1) / parseInt(valor2);
-    res.innerHTML = `Resultado de <strong>${valor1}</strong> / <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
+    res.innerHTML = `Resultado: <strong>${valor1}</strong> / <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
 }

@@ -27,6 +27,7 @@ body{
 }
 
 h3{
+    user-select: none;
     font-size: 30px;
     margin-bottom: 40px;
 }
@@ -101,7 +102,9 @@ input[type=reset]:active{
     color:#5c87fe;
 }
 #res{
+    padding: 20px;
     font-size: 25px;
+    user-select: none;
 }
 .clean{
     margin-top: 25px;

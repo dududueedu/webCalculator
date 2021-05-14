@@ -9,8 +9,8 @@ function Dashboard () {
             <div className="container">
                 <h3> Digite os valores </h3>
                 <div className="position-row">
-                    <input type="number" id="txt1" placeholder="VALOR 1" />
-                    <input type="number" id="txt2" placeholder="VALOR 2" />
+                    <input type="number" id="txt1" placeholder="Valor 1" />
+                    <input type="number" id="txt2" placeholder="Valor 2" />
                 </div>
                 <div className="position-num-row">
                     <input type="submit" onClick={add1} value="1" className="numeros"/>
@@ -31,7 +31,7 @@ function Dashboard () {
                 </div>
                 <a href="index.html" className = "clean">
                     <input type="reset" value="Limpar" /></a>
-                <div id="res"> </div>
+                <div id="res"> &#8680; </div>
             </div>
         )
 }
