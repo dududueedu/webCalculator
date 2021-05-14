@@ -23,13 +23,14 @@ function Dashboard () {
                     <input type="submit" onClick={add8} value="8" className="numeros"/>
                     <input type="submit" onClick={add9} value="9" className="numeros"/>
                 </div>
-                <div className="position-row">
-                    <input type="submit" onClick={somar} value="+" />
-                    <input type="submit" onClick={subtrair} value="-" />
-                    <input type="submit" onClick={mutplicar} value="x" />
-                    <input type="submit" onClick={dividir} value="&#247;" />
+                <div>
+                    <input type="submit" onClick={somar} className="op" value="+" />
+                    <input type="submit" onClick={subtrair} className="op" value="-" />
+                    <input type="submit" onClick={mutplicar} className="op" value="x" />
+                    <input type="submit" onClick={dividir} className="op" value="&#247;" />
                 </div>
-                <a href="index.html"><input type="reset" value="Limpar" /></a>
+                <a href="index.html" className = "clean">
+                    <input type="reset" value="Limpar" /></a>
                 <div id="res"> </div>
             </div>
         )

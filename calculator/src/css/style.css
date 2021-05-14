@@ -9,9 +9,7 @@
 }
 body{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     overflow: hidden;
     font-family: arial;
@@ -30,27 +28,7 @@ body{
 
 h3{
     font-size: 30px;
-    margin-bottom: 50px;
-    color: #000000d2;
-}
-
-.position-row{
-    display:flex;
-}
-
-input{
-    border-radius:20px;
-    outline: none;
-    border:1px solid var(--background);
-    box-shadow:-8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9, 8px 8px 20px #0001, 5px 5px 6px 0px #0001;
-}
-
-input[type=number]{
-    width: 150px;
-    height: 40px;
-    font-size: 15px;
-    padding: 20px;
-    margin: 4px 5px;
+    margin-bottom: 40px;
 }
 
 .position-num-row{
@@ -58,35 +36,50 @@ input[type=number]{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 300px;
+    width: 250px;
     height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.numeros{
-    display:flex;
-    align-items: center;
+input{
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid var(--background);
+    box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9, 8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+}
+
+input.numeros{
     justify-content: center;
-    margin:10px;
-    width:50px;
-    height:50px;
-    font-size:25px;
-    border-radius:50%;
-    text-align: left;
-    background-color:white;
-    box-shadow:-8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9, 8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+    border-radius: 50%;
+    background-color: white;
 }
 
-.numeros:active{
-	box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9, inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+input[type=number]{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    padding: 20px;
+    margin: 5px 5px;
 }
 
-input[type=submit]{
-    font-size:25px;
-    width:80px;
-    height:40px;
-    margin:5px 5px;
-    cursor:pointer;
+input[type=submit].op{
+    font-size: 25px;
+    width: 80px;
+    height: 50px;
+    margin: 5px 5px;
+    cursor: pointer;
+    color:#000000d2;
+    margin-top: 20px;
+    background-color: white;
+}
+
+input[type=submit].numeros{
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    margin: 5px 5px;
+    cursor: pointer;
     color:#000000d2;
 }
 
@@ -105,13 +98,14 @@ input[type=reset]{
     background-color: #fff;
 }
 input[type=reset]:active{
-    box-shadow: inset -4px -4px 10px #fff9, inset 4px 4px 10px rgba(87, 9, 9, 0.2), inset 5px 5px 6px rgba(255, 0, 0, 0.067);
+    color:#5c87fe;
 }
 #res{
-    margin-top:50px;
-    font-size:25px;
+    font-size: 25px;
 }
-
+.clean{
+    margin-top: 25px;
+}
 /*
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
