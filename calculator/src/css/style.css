@@ -8,22 +8,19 @@
 	--gray: #797d7f;
 }
 body{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    overflow: auto;
     font-family: arial;
     background-color: #000000d2;
 }
 
-.container{
+.container-dashboard{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: var(--background);
-    height: 100vh;
-    width: 600px;
+    height: 80%;
+    width: 100%;
 }
 
 h3{
@@ -109,7 +106,19 @@ input[type=reset]:active{
 .clean{
     margin-top: 25px;
 }
+
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+}
 /*
+    .bg-primary {
+        background-color: var(--color-primary) !important;
+    }
+
+    .text-primary {
+        color: var(--color-primary) !important;
+    }
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
 */

@@ -6,7 +6,7 @@ import { somar, subtrair, mutplicar, dividir } from '../functions/operations'
 function Dashboard () {
 
         return (
-            <div className="container">
+            <div className="container-dashboard">
                 <h3> Digite os valores </h3>
                 <div className="position-row">
                     <input type="number" id="txt1" placeholder="Valor 1" />
