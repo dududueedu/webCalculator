@@ -114,3 +114,18 @@ input[type=reset]:active{
 .container-logo{
     margin-left: 9px;
 }
+/*resolução menor 768px, entra na condição da media*/
+@media screen and (max-width: 768px) {
+    input[type=submit].op{
+        width: 70px;
+        height: 40px;
+        margin: 0px 2px 0px 2px;
+        margin-top: 10px;
+    }
+    .clean{
+        margin-top: 20px;
+    }
+    #res{
+        padding: 10px;
+    }
+}
