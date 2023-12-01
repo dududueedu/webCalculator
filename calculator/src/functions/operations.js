@@ -1,4 +1,4 @@
-export function somar() {
+export function adding() {
     var valor1 = document.getElementById("txt1").value;
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
@@ -6,7 +6,7 @@ export function somar() {
     res.innerHTML = `Resultado: <strong>${valor1}</strong> + <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
 }
 
-export function subtrair() {
+export function reduce() {
     var valor1 = document.getElementById("txt1").value;
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
@@ -14,7 +14,7 @@ export function subtrair() {
     res.innerHTML = `Resultado: <strong>${valor1}</strong> - <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
 }
 
-export function mutplicar() {
+export function multiply() {
     var valor1 = document.getElementById("txt1").value;
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
@@ -22,7 +22,7 @@ export function mutplicar() {
     res.innerHTML = `Resultado: <strong>${valor1}</strong> X <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
 }
 
-export function dividir() {
+export function share() {
     var valor1 = document.getElementById("txt1").value;
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");

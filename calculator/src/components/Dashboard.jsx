@@ -2,7 +2,7 @@ import React from 'react'
 import '../functions/operations'
 import '../functions/showdata'
 import { add1, add2, add3, add4, add5, add6, add7, add8, add9 } from '../functions/showdata'
-import { somar, subtrair, mutplicar, dividir } from '../functions/operations'
+import { adding, reduce, multiply, share } from '../functions/operations'
 function Dashboard () {
 
         return (
@@ -27,10 +27,10 @@ function Dashboard () {
                     <input type="submit" onClick={add9} value="9" className="numeros"/>
                 </div>
                 <div className='options'>
-                    <input type="submit" onClick={somar} className="op" value="+" />
-                    <input type="submit" onClick={subtrair} className="op" value="-" />
-                    <input type="submit" onClick={mutplicar} className="op" value="x" />
-                    <input type="submit" onClick={dividir} className="op" value="&#247;" />
+                    <input type="submit" onClick={adding} className="op" value="+" />
+                    <input type="submit" onClick={reduce} className="op" value="-" />
+                    <input type="submit" onClick={multiply} className="op" value="x" />
+                    <input type="submit" onClick={share} className="op" value="&#247;" />
                 </div>
             </div>
         )
