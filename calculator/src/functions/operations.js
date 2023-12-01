@@ -3,7 +3,7 @@ export function adding() {
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
     var resultado = parseInt(valor1) + parseInt(valor2);
-    res.innerHTML = `Resultado: <strong>${valor1}</strong> + <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
+    res.value = resultado;
 }
 
 export function reduce() {
@@ -11,7 +11,7 @@ export function reduce() {
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
     var resultado = parseInt(valor1) - parseInt(valor2);
-    res.innerHTML = `Resultado: <strong>${valor1}</strong> - <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
+    res.value = resultado;
 }
 
 export function multiply() {
@@ -19,7 +19,7 @@ export function multiply() {
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
     var resultado = parseInt(valor1) * parseInt(valor2);
-    res.innerHTML = `Resultado: <strong>${valor1}</strong> X <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
+    res.value = resultado;
 }
 
 export function share() {
@@ -27,5 +27,5 @@ export function share() {
     var valor2 = document.getElementById("txt2").value;
     var res = document.getElementById("res");
     var resultado = parseInt(valor1) / parseInt(valor2);
-    res.innerHTML = `Resultado: <strong>${valor1}</strong> / <strong>${valor2}</strong> é: <strong>${resultado}</strong>`
+    res.value = resultado;
 }

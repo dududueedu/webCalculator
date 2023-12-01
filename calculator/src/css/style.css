@@ -23,6 +23,16 @@ body{
     width: 100%;
 }
 
+.container-dash{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+    width: 40%;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
 h3{
     user-select: none;
     font-size: 30px;
@@ -34,7 +44,7 @@ h3{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 250px;
+    width: 300px;
     height: 200px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -58,12 +68,12 @@ input[type=number]{
     height: 40px;
     font-size: 15px;
     padding: 20px;
-    margin: 5px 5px;
+    margin: 5px 40px;
 }
 
 input[type=submit].op{
     font-size: 20px;
-    width: 80px;
+    width: 50px;
     height: 50px;
     margin: 0px 10px 0px 10px;
     cursor: pointer;
@@ -74,9 +84,9 @@ input[type=submit].op{
 
 input[type=submit].numeros{
     font-size: 20px;
-    width: 60px;
-    height: 60px;
-    margin: 5px 5px;
+    width: 75px;
+    height: 75px;
+    margin: 15px 10px;
     cursor: pointer;
     color:#000000d2;
 }
@@ -98,13 +108,28 @@ input[type=reset]{
 input[type=reset]:active{
     color:#5c87fe;
 }
+
 #res{
-    padding: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    margin: 5px;
     font-size: 25px;
     user-select: none;
 }
-.clean{
-    margin-left: 150px;
+
+.clean {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e5ec;
+    border: none;
+    margin-left: 10px;
+}
+
+.clean:hover {
+    background-color: #000;
+    color: #FFF;
 }
 
 .footer {
@@ -135,11 +160,24 @@ input[type=reset]:active{
 }
 
 .options {
-    margin-bottom: 98px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
 .text-white-a {
     margin-left: 10px;
     margin-right: 10px;
     color: #fff;
+}
+
+.okay {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+.btn-and-input {
+    margin-top: 40px;
 }

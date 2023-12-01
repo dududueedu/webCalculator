@@ -52,3 +52,8 @@ export const add9=() =>{
     if (!document.getElementById("txt1").value)
         document.getElementById("txt1").value = 9;    
 }
+export const ResetReult = () =>{
+    document.getElementById("txt1").value = '';
+    document.getElementById("txt2").value = '';
+    document.getElementById("res").value = '';
+}
