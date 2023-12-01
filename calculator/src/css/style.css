@@ -19,7 +19,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: var(--background);
-    height: 80%;
+    height: 100%;
     width: 100%;
 }
 
@@ -53,8 +53,6 @@ h3{
 input{
     border-radius: 20px;
     outline: none;
-    border: 1px solid var(--background);
-    box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9, 8px 8px 20px #0001, 5px 5px 6px 0px #0001;
 }
 
 input.numeros{
@@ -64,22 +62,24 @@ input.numeros{
 }
 
 input[type=number]{
-    width: 150px;
+    width: 200px;
     height: 40px;
     font-size: 15px;
-    padding: 20px;
-    margin: 5px 40px;
+    padding: 20px 20px;
+    margin: 5px 0px;
 }
 
 input[type=submit].op{
     font-size: 20px;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     margin: 0px 10px 0px 10px;
     cursor: pointer;
     color:#000000d2;
-    margin-top: 20px;
+    margin-top: 5px;
     background-color: white;
+    border-radius: 50px;
+    font-weight: bold;
 }
 
 input[type=submit].numeros{
@@ -96,19 +96,6 @@ input[type=submit]:active{
 	box-shadow: inset -4px -4px 20px #fff9, inset -5px -5px 6px #fff9, inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
 }
 
-input[type=reset]{
-    font-size: 20px;
-    width: 100px;
-    height: 40px;
-    margin: 5px 5px;
-    cursor: pointer;
-    color: #000000d2;
-    background-color: #fff;
-}
-input[type=reset]:active{
-    color:#5c87fe;
-}
-
 #res{
     padding: 10px;
     margin-top: 20px;
@@ -118,24 +105,16 @@ input[type=reset]:active{
 }
 
 .clean {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 50px;
     background-color: #e0e5ec;
-    border: none;
-    margin-left: 10px;
 }
 
-.clean:hover {
+.clean:hover, .btn-tutorial:hover {
     background-color: #000;
     color: #FFF;
 }
 
-.footer {
-    flex-shrink: 0;
-    text-align: center;
-}
 .container-logo{
     margin-left: 9px;
 }
@@ -147,16 +126,19 @@ input[type=reset]:active{
         margin: 0px 2px 0px 2px;
         margin-top: 10px;
     }
+    .container-dash{
+        width: auto;
+    }
+    .position-row{
+        display: flex;
+        flex-direction: column;
+    }
     .clean{
         margin-top: 20px;
     }
     #res{
         padding: 10px;
     }
-}
-
-.op {
-    font-weight: bold;
 }
 
 .options {
@@ -180,4 +162,23 @@ input[type=reset]:active{
 
 .btn-and-input {
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-tutorial{
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+#txt1 {
+    margin-right: 10px;
+}
+
+.position-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

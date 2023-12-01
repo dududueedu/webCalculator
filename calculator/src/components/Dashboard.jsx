@@ -3,12 +3,26 @@ import '../functions/operations'
 import '../functions/showdata'
 import { add1, add2, add3, add4, add5, add6, add7, add8, add9, ResetReult } from '../functions/showdata'
 import { adding, reduce, multiply, share } from '../functions/operations'
+import Swal from 'sweetalert2'
+
 function Dashboard () {
+
+    const info = () => {
+        Swal.fire({
+            title: "ATENÇÃO!",
+            text: "Escolha primeiro os números e depois a operação desejada. Obs: Caso seja um número com mais de uma unidade, digite na caixinha.",
+            icon: "warning",
+            showCancelButton: false,
+            confirmButtonColor: "#212529",
+            confirmButtonText: "Ok"
+        })
+    }
+
         return (
             <div className="container-dashboard">
                 <div className="container-dash">
                     <div className="btn-and-input">
-                        <input placeholder="RESULTADO" id="res" />
+                        <input placeholder="Resultado" id="res" />
                         <button onClick={ResetReult} className="clean"> LIMPAR </button>    
                     </div>
                     <div className="position-row">
@@ -35,6 +49,7 @@ function Dashboard () {
                             <input type="submit" onClick={share} className="op" value="&#247;" />
                         </div>
                     </div>
+                    <button onClick={info} className="btn-tutorial"> Como usar? </button>
                 </div>
             </div>
         )
