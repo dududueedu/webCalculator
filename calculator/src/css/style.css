@@ -104,7 +104,7 @@ input[type=reset]:active{
     user-select: none;
 }
 .clean{
-    margin-top: 25px;
+    margin-left: 150px;
 }
 
 .footer {
@@ -128,4 +128,18 @@ input[type=reset]:active{
     #res{
         padding: 10px;
     }
+}
+
+.op {
+    font-weight: bold;
+}
+
+.options {
+    margin-bottom: 98px;
+}
+
+.text-white-a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
 }

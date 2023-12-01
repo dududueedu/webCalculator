@@ -7,7 +7,10 @@ function Dashboard () {
 
         return (
             <div className="container-dashboard">
-                <h3> Digite os valores </h3>
+                <div id="res"> RESULTADO: 
+                    <a href="index.html" className = "clean">
+                        <input type="reset" value="LIMPAR" /></a>
+                </div>
                 <div className="position-row">
                     <input type="number" id="txt1" placeholder="Valor 1" />
                     <input type="number" id="txt2" placeholder="Valor 2" />
@@ -23,15 +26,12 @@ function Dashboard () {
                     <input type="submit" onClick={add8} value="8" className="numeros"/>
                     <input type="submit" onClick={add9} value="9" className="numeros"/>
                 </div>
-                <div>
+                <div className='options'>
                     <input type="submit" onClick={somar} className="op" value="+" />
                     <input type="submit" onClick={subtrair} className="op" value="-" />
                     <input type="submit" onClick={mutplicar} className="op" value="x" />
                     <input type="submit" onClick={dividir} className="op" value="&#247;" />
                 </div>
-                <a href="index.html" className = "clean">
-                    <input type="reset" value="Limpar" /></a>
-                <div id="res"> &#8680; </div>
             </div>
         )
 }
